@@ -1,0 +1,38 @@
+@mixin theme($dark-theme: true){
+    @if $dark-theme {
+        background-color: $dark-bg;
+        color: $secondary;
+    }
+}
+
+main{
+    margin: 0 auto;
+    width: 80%;
+}
+
+header, footer{
+    text-align: center;
+}
+
+footer{
+    a{
+        color: $demon;
+    }
+}
+
+body{
+    background-color: $primary;
+}
+
+.hide{
+    display: none;
+}
+
+.winning{
+    text-align: center;
+    font-size: 20px;
+}
+
+.dark{
+    @include theme($dark-theme: true);
+}

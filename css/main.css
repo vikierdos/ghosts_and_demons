@@ -1,0 +1,87 @@
+main {
+  margin: 0 auto;
+  width: 80%;
+}
+
+header, footer {
+  text-align: center;
+}
+
+footer a {
+  color: #C22D01;
+}
+
+body {
+  background-color: #B8A8C1;
+}
+
+.hide {
+  display: none;
+}
+
+.winning {
+  text-align: center;
+  font-size: 20px;
+}
+
+.dark {
+  background-color: #330136;
+  color: #D7632B;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    width: 100%;
+  }
+}
+
+.play-place {
+  display: grid;
+  gap: 10px;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto auto auto;
+}
+.play-place .card {
+  display: inline-grid;
+  border: 3px solid #D7632B;
+  background-color: #634669;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  position: relative;
+}
+.play-place .card:hover {
+  background-color: #3A2640;
+}
+.play-place .card i {
+  font-size: 60px;
+  padding-top: calc(50% - 30px);
+}
+.play-place .card .ghost {
+  color: #B8A8C1;
+}
+.play-place .card .demon {
+  color: #C22D01;
+}
+@media screen and (max-width: 600px) {
+  .play-place .card {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .play-place .card {
+    width: 125px;
+    height: 125px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .play-place {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .play-place {
+    grid-template-columns: auto auto auto;
+  }
+}
